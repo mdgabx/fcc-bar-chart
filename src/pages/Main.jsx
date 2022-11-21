@@ -9,7 +9,7 @@ const Main = () => {
         //fetch the data
         fetchData();
 
-    }, []);
+    }, [setData]);
 
     const fetchData = () => {
         const url = 'https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json';
