@@ -98,6 +98,7 @@ const Chart = (props) => {
                         .style('align-items', 'center')
                         .style('opacity', '0.8')
                         .style('border-radius', '16px')
+                        .style('top', '80%')
                         .style('justify-content', 'center');
 
     } 
