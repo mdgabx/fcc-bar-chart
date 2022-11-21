@@ -79,6 +79,10 @@ const Chart = (props) => {
                 tooltip.transition()
                         .style('visibility', 'hidden')
             })
+            .on("mousemove", (event,d) => {
+                tooltip.transition()
+                        .style("left", event.pageX+1+"px")
+            })
 
         let tooltip = d3.select('body')
                         .append('div')
@@ -89,7 +93,6 @@ const Chart = (props) => {
                         .style('color', '#fff')
                         .style('position', 'absolute')
                         .style('background', "#000")
-                        .style('top', '50%')
                         .style('z-index', '100')
                         .style('display', "flex")
                         .style('align-items', 'center')
@@ -106,6 +109,7 @@ const Chart = (props) => {
              <div className="bar-chart">
 
              </div>
+             
         </main>
      );
 }
